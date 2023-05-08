@@ -1,0 +1,59 @@
+body {
+	font: 16px/1.5em Lato, sans-serif;
+	color: rgb(255, 255, 255);
+    background-color: rgb(226, 212, 132)
+}
+.pull-left {
+	margin: 0 20px 0 0;
+	width: 80px;
+	color: black;
+	font-weight: bolder;
+	text-align: center;
+}
+.pull-right {
+	margin: 0 0 0 20px;
+	width: 80px;
+	color: black;
+	font-weight: bolder;
+	text-align: center;
+}
+.progress {
+	position: relative;
+}
+.center-bar {
+	border-left: 1px dashed #FFF;
+	height: 100%;
+	left: 50%;
+	position: absolute;
+}
+@media (min-width: 992px) {
+	
+	ol li {
+		float: left;
+		margin-bottom: 1em;
+		width: 50%;
+	}
+
+}
+
+.questionnaire-title {
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-size: 40px;
+}
+
+ol {
+	background: rgb(226, 212, 132);
+  	padding: 20px;
+}
+
+ol li {
+	background: #ffffff;
+	color: rgb(0, 0, 0);
+	padding: 5px;
+	margin-left: 35px;
+}
+
+.down-list {
+	padding-top: 5px;
+}

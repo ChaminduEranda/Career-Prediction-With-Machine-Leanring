@@ -1,0 +1,96 @@
+body {
+    font-size: 120%;
+    font-family: 'Times New Roman', Times, serif;
+    background: #ffffff;
+    background-image: url(../img/abstract-pattern-mosaic.jpg);
+    background-size: cover;
+}
+
+p {
+    
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.answer1{
+    padding-top: 10%;
+}
+
+.answer2{
+    font-weight: bolder;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 5%;
+}
+
+.header {
+    margin: 50px auto 0px;
+    color: white;
+    background: #4c0b81;
+    text-align: center;
+    border: 1px solid #B0C4DE;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
+}
+
+.input-group {
+    margin: 10px 0px 10px 0px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+.input-group label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+}
+
+.input-group input {
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.form-option {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+.user-input {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.user-input-form {
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.btn-next {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #000;
+}
+
+.btn-next:hover {
+    background: #2dc997;
+    border: 2px solid #2dc997;
+}

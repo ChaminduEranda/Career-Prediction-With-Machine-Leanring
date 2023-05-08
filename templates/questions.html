@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user inputs</title>
+
+    <link href="static/css/styleQuestions.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="user-input-form">
+        <div class="header">
+            <h2>Provide the following answers</h2>
+        </div>
+        <form action="{{ url_for('predict')}}" method="post">
+            <div class="input-group">
+                <label> Select your MBTI personality type </label>
+            </div>
+            <select id="userInputPersonality" onchange="userPersonality()" class="form-option">
+                <option> </option>
+                <option> INTP </option>
+                <option> ENTJ </option>
+                <option> ESTJ </option>
+                <option> ISTJ </option>
+                <option> ENFP </option>
+                <option> INTJ </option>
+                <option> ISTP </option>
+                <option> ENTP </option>
+                <option> INFP </option>
+            </select>
+            <div class="input-group">
+                <label> Select your skill from below </label>
+            </div>
+            <select id="userInputSkill" onchange="userSkill()" class="form-option">
+                <option> </option>
+                <option> Analytical Thinking </option>
+                <option> Strategic Planning </option>
+                <option> Time Management </option>
+                <option> Attention to Detail </option>
+                <option> Creativity </option>
+                <option> Statistical Analysis </option>
+                <option> Problem Solving </option>
+                <option> Innovation </option>
+                <option> Technical Knowledge </option>
+                <option> Writing Skills </option>
+            </select>
+            <br>
+
+            <br>
+            <input type="hidden" id="personality" size="20" class="user-input">
+
+            <br>
+            <input type="hidden" id="skill" size="20" class="user-input">
+
+            <!--
+                --- Choose Personality Type ---
+                --- Choose Skill ---
+            -->
+            <!--
+            
+            <button class="btn-next" type="submit" onclick="window.location.href='{{ url_for('predict') }}';">Find the Career path</button>
+            -->
+            <button class="btn-next" type="submit" onclick="myfunction();">Find the Career path</button>
+        </form>
+        <button class="btn-get-started" type="button" onclick="window.location.href='{{ url_for('home') }}';">Home Page</button>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script src="static/js/main.js"></script>
+</body>
+
+</html>
