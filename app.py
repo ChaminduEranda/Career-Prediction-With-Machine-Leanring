@@ -98,21 +98,6 @@ def questionnaire():
 def questions():
     return render_template('questions.html')
 
-""""
-@app.route('/predict',methods=['GET','POST'])
-def predict():    
-    
-    x=[[6,2]]
-    print(x)
-    predicted_value = model.predict(x)
-    print(predicted_value)
-    result1 = obj1.inverse_transform(predicted_value)
-    result = result1[0]
-    print(result)
-    
-    return render_template('results.html', result=result)
-"""
-
 @app.route('/predict',methods=['GET','POST'])
 def predict():    
     obj1.fit_transform(career_convertion_result)    
@@ -130,5 +115,3 @@ def predict():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-# 'flask run' to run the application
